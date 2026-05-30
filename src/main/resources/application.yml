@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: interview-question-bank
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/interview_questions?createDatabaseIfNotExist=true}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  similarity-threshold: ${SIMILARITY_THRESHOLD:0.82}
+  embedding-dimensions: ${EMBEDDING_DIMENSIONS:256}
