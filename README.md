@@ -9,7 +9,7 @@ Spring Boot REST API for saving interview questions and answers, auto-categorizi
 - Generate deterministic local embeddings.
 - Check semantic similarity using cosine similarity.
 - Increment `frequencyCount` when a similar question already exists.
-- Store data in MySQL.
+- Store data in PostgreSQL.
 - REST APIs only, with no authentication.
 
 ## Tech Stack
@@ -18,12 +18,12 @@ Spring Boot REST API for saving interview questions and answers, auto-categorizi
 - Spring Boot 3
 - Spring Web
 - Spring Data JPA
-- MySQL
+- PostgreSQL
 - Maven
 
 ## Database
 
-Create a MySQL database:
+Create a PostgreSQL database:
 
 ```sql
 CREATE DATABASE interview_questions;
@@ -32,9 +32,9 @@ CREATE DATABASE interview_questions;
 Default connection:
 
 ```text
-url: jdbc:mysql://localhost:3306/interview_questions?createDatabaseIfNotExist=true
-username: root
-password: root
+url: jdbc:postgresql://localhost:5432/interview_questions
+username: postgres
+password: postgres
 ```
 
 Override with environment variables:
