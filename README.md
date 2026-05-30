@@ -32,9 +32,9 @@ CREATE DATABASE interview_questions;
 Default connection:
 
 ```text
-url: jdbc:postgresql://localhost:5432/interview_questions
+url: jdbc:postgresql://db.oryshinfkqticdhvrntg.supabase.co:5432/postgres?sslmode=require
 username: postgres
-password: postgres
+password: set through DB_PASSWORD
 ```
 
 Override with environment variables:
@@ -45,6 +45,14 @@ DB_USERNAME
 DB_PASSWORD
 SIMILARITY_THRESHOLD
 EMBEDDING_DIMENSIONS
+```
+
+For Supabase, set:
+
+```text
+DB_URL=jdbc:postgresql://db.oryshinfkqticdhvrntg.supabase.co:5432/postgres?sslmode=require
+DB_USERNAME=postgres
+DB_PASSWORD=your_supabase_database_password
 ```
 
 ## Run
