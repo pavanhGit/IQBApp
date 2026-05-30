@@ -16,3 +16,11 @@ spring:
 app:
   similarity-threshold: ${SIMILARITY_THRESHOLD:0.82}
   embedding-dimensions: ${EMBEDDING_DIMENSIONS:256}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
