@@ -32,8 +32,8 @@ CREATE DATABASE interview_questions;
 Default connection:
 
 ```text
-url: jdbc:postgresql://db.oryshinfkqticdhvrntg.supabase.co:5432/postgres?sslmode=require
-username: postgres
+url: jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:6543/postgres
+username: postgres.oryshinfkqticdhvrntg
 password: set through DB_PASSWORD
 ```
 
@@ -50,8 +50,8 @@ EMBEDDING_DIMENSIONS
 For Supabase, set:
 
 ```text
-DB_URL=jdbc:postgresql://db.oryshinfkqticdhvrntg.supabase.co:5432/postgres?sslmode=require
-DB_USERNAME=postgres
+DB_URL=jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:6543/postgres
+DB_USERNAME=postgres.oryshinfkqticdhvrntg
 DB_PASSWORD=your_supabase_database_password
 ```
 
