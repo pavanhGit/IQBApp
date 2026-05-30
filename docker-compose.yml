@@ -1,0 +1,12 @@
+services:
+  iqb-app:
+    build: .
+    container_name: iqb-app
+    ports:
+      - "8080:8080"
+    environment:
+      DB_URL: jdbc:postgresql://db.oryshinfkqticdhvrntg.supabase.co:5432/postgres?sslmode=require
+      DB_USERNAME: postgres
+      DB_PASSWORD: ${DB_PASSWORD}
+      SIMILARITY_THRESHOLD: 0.82
+      EMBEDDING_DIMENSIONS: 256

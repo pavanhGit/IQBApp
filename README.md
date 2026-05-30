@@ -63,6 +63,35 @@ mvn spring-boot:run
 
 The API starts on `http://localhost:8080`.
 
+## Run With Docker
+
+Build the image:
+
+```bash
+docker build -t iqb-app .
+```
+
+Run the container:
+
+```bash
+docker run --rm -p 8080:8080 \
+  -e DB_PASSWORD=your_supabase_database_password \
+  iqb-app
+```
+
+Or run with Docker Compose:
+
+```bash
+DB_PASSWORD=your_supabase_database_password docker compose up --build
+```
+
+On Windows PowerShell:
+
+```powershell
+$env:DB_PASSWORD="your_supabase_database_password"
+docker compose up --build
+```
+
 ## APIs
 
 ### Save Question
